@@ -1,0 +1,41 @@
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
