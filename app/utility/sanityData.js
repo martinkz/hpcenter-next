@@ -2,11 +2,11 @@ const DATASET = "production";
 const QUERY = encodeURIComponent('*[!(_id in path("drafts.**"))]');
 const PROJECT_URL = `https://${process.env.SANITY_PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
 
-export async function getSanityData(url: string) {
+async function getSanityData(url) {
 	return await fetch(url)
 		.then((res) => res.json())
 		.then(({ result }) => {
-			console.log(result);
+			// console.log(result);
 			return result;
 		})
 		.catch((err) => console.error(err));
