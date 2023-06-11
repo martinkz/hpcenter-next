@@ -3,7 +3,7 @@ const QUERY = encodeURIComponent('*[!(_id in path("drafts.**"))]');
 const PROJECT_URL = `https://${process.env.SANITY_PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
 
 async function getSanityData(url) {
-	return await fetch(url)
+	return await fetch(url, { next: { revalidate: 0 } })
 		.then((res) => res.json())
 		.then(({ result }) => {
 			// console.log(result);
