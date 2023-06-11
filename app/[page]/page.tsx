@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getData } from "@/app/utility/sanityData";
 import { portableTextToHtml } from "@/app/utility/contentTransforms";
 import SimpleCarousel from "@/app/components/SimpleCarousel";

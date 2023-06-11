@@ -16,11 +16,9 @@ export default function SimpleCarousel({ images }: { images: string[] }) {
 
 	return (
 		<div className="carousel content-inline">
-			<div className="carousel content-inline">
-				{images.map((filename: string, idx: number) => (
-					<img style={{ opacity: currentSlide === idx ? 1 : 0 }} className="bgimage" src={`/images/carousel/${filename}`} key={filename} alt="" />
-				))}
-			</div>
+			{images.map((filename: string, idx: number) => (
+				<img style={{ opacity: currentSlide === idx ? 1 : 0 }} className="bgimage" src={`/images/carousel/${filename}`} key={filename} alt="" />
+			))}
 		</div>
 	);
 }
