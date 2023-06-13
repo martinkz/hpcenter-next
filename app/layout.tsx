@@ -1,6 +1,7 @@
 import "@/app/styles/styles.scss";
 import { getData } from "@/app/utility/sanityData";
 import { Header } from "@/app/components/header";
+import { Footer } from "./components/footer";
 
 export const metadata = {
 	title: "HP Centre",
@@ -17,6 +18,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 				<div className="page">
 					<Header menuItems={menu} />
 					{children}
+					<Footer />
 				</div>
 			</body>
 		</html>
