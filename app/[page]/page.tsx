@@ -28,7 +28,7 @@ export default async function Page({ params }: { params: { page: string } }) {
 	return (
 		<>
 			<div className="page-hero">
-				<img src="/images/page.jpg" alt="" />
+				<img className="hero-img" src="/images/page.jpg" alt="" />
 				<h1 className="page-title">{the_page.title}</h1>
 			</div>
 

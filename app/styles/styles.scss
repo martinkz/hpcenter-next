@@ -81,13 +81,32 @@
 
 .page-hero {
 	position: relative;
+	aspect-ratio: 1000 / 258;
+
+	@media(max-width: 800px) {
+		aspect-ratio: 1000 / 500;
+	}
+
+	.hero-img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		object-fit: cover;
+		object-position: right center;
+	}
+
+	h1 {
+		font-size: clamp(1.5rem, 2.6vw, 3rem);
+	}
 }
 
 .page-title {
 	position: absolute;
 	bottom: 0;
 	margin: 0;
-	padding: 1rem 2rem 2rem;
+	padding: 1rem 2rem;
 	background-color: #14abb3;
 	color: white;
 
@@ -107,13 +126,23 @@
 }
 
 .carousel {
-	width: 400px;
 	position: relative;
 	aspect-ratio: 2/3;
+
+	@media(min-width: 800px) {
+		width: 400px;
+	}
 
 	img {
 		transition: opacity 0.4s ease;
 		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		object-fit: cover;
+		object-position: center center;
 	}
 }
 
