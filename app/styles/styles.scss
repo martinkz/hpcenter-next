@@ -13,7 +13,7 @@
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 
-	@media(min-width: $bp-small) {
+	@media (min-width: $bp-small) {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -23,12 +23,12 @@
 .main-nav {
 	margin-top: 1rem;
 
-	@media(min-width: $bp-small) {
+	@media (min-width: $bp-small) {
 		margin-top: 0;
 	}
 
 	ul {
-		@media(min-width: $bp-small) {
+		@media (min-width: $bp-small) {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -54,7 +54,7 @@
 	max-width: 350px;
 	margin: auto;
 
-	@media(min-width: $bp-small) {
+	@media (min-width: $bp-small) {
 		margin: 0;
 	}
 }
@@ -65,6 +65,21 @@
 	border-radius: 55px;
 	padding: 0.7rem 2rem;
 	text-decoration: none;
+	text-align: center;
+}
+
+.btn-donate {
+	padding-bottom: 1rem;
+}
+
+.btn-donate span {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.btn-donate small {
+	display: block;
+	font-size: 1rem;
 }
 
 .hero-img,
@@ -83,7 +98,7 @@
 	position: relative;
 	aspect-ratio: 1000 / 258;
 
-	@media(max-width: 800px) {
+	@media (max-width: 800px) {
 		aspect-ratio: 1000 / 500;
 	}
 
@@ -112,13 +127,13 @@
 
 	left: calc((100% - 1000px) / 2);
 
-	@media(max-width: 1060px) {
+	@media (max-width: 1060px) {
 		left: 30px;
 	}
 }
 
 .content-inline {
-	@media(min-width: 800px) {
+	@media (min-width: 800px) {
 		float: left;
 		margin-right: 2rem;
 		margin-bottom: 1rem;
@@ -129,7 +144,7 @@
 	position: relative;
 	aspect-ratio: 2/3;
 
-	@media(min-width: 800px) {
+	@media (min-width: 800px) {
 		width: 400px;
 	}
 

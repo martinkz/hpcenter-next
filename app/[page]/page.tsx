@@ -37,8 +37,9 @@ export default async function Page({ params }: { params: { page: string } }) {
 				<div dangerouslySetInnerHTML={portableTextToHtml(the_page.body)}></div>
 				{isDonatePage && (
 					<div className="donate-wrap">
-						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XYTKARDXUW7U4" target="_blank" className="btn">
-							Donate now
+						<a href="https://donate.stripe.com/14k9Cv9kUf8zbGo7ss" target="_blank" className="btn btn-donate">
+							<span>Donate Now</span>
+							<small>Debit or Credit Card</small>
 						</a>
 					</div>
 				)}
